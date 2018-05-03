@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Titles are same]]>
+    </line>
+    <line>
+      <![CDATA[text IGNITE EvoKNIT Lo 2 Men's Running Shoes is present]]>
+    </line>
+    <line>
+      <![CDATA[Quantity one is present]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="104746" started-at="2018-05-03T07:03:38Z" finished-at="2018-05-03T07:05:23Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="104746" started-at="2018-05-03T07:03:38Z" finished-at="2018-05-03T07:05:23Z">
+      <class name="com.puma.script.AddProductTest">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:com.puma.script.AddProductTest@464bee09]" name="openApp" is-config="true" duration-ms="22698" started-at="2018-05-03T12:33:38Z" finished-at="2018-05-03T12:34:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="PASS" signature="addProduct()[pri:0, instance:com.puma.script.AddProductTest@464bee09]" name="addProduct" duration-ms="78428" started-at="2018-05-03T12:34:01Z" finished-at="2018-05-03T12:35:19Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Titles are same]]>
+            </line>
+            <line>
+              <![CDATA[text IGNITE EvoKNIT Lo 2 Men's Running Shoes is present]]>
+            </line>
+            <line>
+              <![CDATA[Quantity one is present]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addProduct -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.puma.script.AddProductTest@464bee09]" name="closeApp" is-config="true" duration-ms="3593" started-at="2018-05-03T12:35:19Z" finished-at="2018-05-03T12:35:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- com.puma.script.AddProductTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
