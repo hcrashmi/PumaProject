@@ -11,16 +11,16 @@
       <![CDATA[Quantity one is present]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="104746" started-at="2018-05-03T07:03:38Z" finished-at="2018-05-03T07:05:23Z">
+  <suite name="Default suite" duration-ms="88489" started-at="2018-05-03T09:14:43Z" finished-at="2018-05-03T09:16:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="104746" started-at="2018-05-03T07:03:38Z" finished-at="2018-05-03T07:05:23Z">
+    <test name="Default test" duration-ms="88489" started-at="2018-05-03T09:14:43Z" finished-at="2018-05-03T09:16:12Z">
       <class name="com.puma.script.AddProductTest">
-        <test-method status="PASS" signature="openApp()[pri:0, instance:com.puma.script.AddProductTest@464bee09]" name="openApp" is-config="true" duration-ms="22698" started-at="2018-05-03T12:33:38Z" finished-at="2018-05-03T12:34:01Z">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:com.puma.script.AddProductTest@464bee09]" name="openApp" is-config="true" duration-ms="22539" started-at="2018-05-03T14:44:43Z" finished-at="2018-05-03T14:45:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="addProduct()[pri:0, instance:com.puma.script.AddProductTest@464bee09]" name="addProduct" duration-ms="78428" started-at="2018-05-03T12:34:01Z" finished-at="2018-05-03T12:35:19Z">
+        <test-method status="PASS" signature="addProduct()[pri:0, instance:com.puma.script.AddProductTest@464bee09]" name="addProduct" duration-ms="63978" started-at="2018-05-03T14:45:06Z" finished-at="2018-05-03T14:46:10Z">
           <reporter-output>
             <line>
               <![CDATA[Titles are same]]>
@@ -33,7 +33,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addProduct -->
-        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.puma.script.AddProductTest@464bee09]" name="closeApp" is-config="true" duration-ms="3593" started-at="2018-05-03T12:35:19Z" finished-at="2018-05-03T12:35:23Z">
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:com.puma.script.AddProductTest@464bee09]" name="closeApp" is-config="true" duration-ms="1949" started-at="2018-05-03T14:46:10Z" finished-at="2018-05-03T14:46:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->

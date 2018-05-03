@@ -10,6 +10,8 @@ import org.testng.annotations.BeforeMethod;
 public class BaseTest implements AutoConstant
 {
 	public WebDriver driver;
+	//Opening Application
+	
 	@BeforeMethod
 	public void openApp()
 	{
@@ -18,6 +20,9 @@ public class BaseTest implements AutoConstant
 		driver.get("https://in.puma.com/");
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	}
+	
+	//Closing Application
+	
 	@AfterMethod
 	public void closeApp()
 	{

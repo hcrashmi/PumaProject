@@ -2,6 +2,7 @@ package com.puma.generic;
 
 public interface AutoConstant
 {
+	//Storing Key-Value pair for geckoDriver and ChromeDriver
 	String GECKO_KEY="webdriver.gecko.driver";
 	String GECKO_VALUE="./src/main/resources/driver/geckodriver.exe";
 	

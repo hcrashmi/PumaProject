@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="script.AddProductTest"/>
+      <class name="com.puma.script.AddProductTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

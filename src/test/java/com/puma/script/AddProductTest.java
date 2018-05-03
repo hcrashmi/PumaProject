@@ -20,15 +20,15 @@ public class AddProductTest extends BaseTest
 	@Test
 	public void addProduct() throws InterruptedException
 	{
+		//Title matching
 		Assert.assertEquals(driver.getTitle(),"Buy Sports T-Shirts, Tracks, Running Shoes and Accessories Online - in.puma.com");
 		Reporter.log("Titles are same",true);
 		
+		//Creating object for HomePage
 		HomePage hp=new HomePage(driver);
-		hp.menShoe();
+		hp.menShoe(2);
 		
-		String parentWindow = driver.getWindowHandle();
-		System.out.println("parentWindow::"+parentWindow);
-		
+		//Switching between tabs
 		Set<String> allWindows = driver.getWindowHandles();
 		System.out.println(allWindows);
 		
@@ -38,18 +38,21 @@ public class AddProductTest extends BaseTest
 			
 		}
 		
+		//Creating object for IGNITEevoKNITPage
 		IGNITEevoKNITPage ip=new IGNITEevoKNITPage(driver);
 		ip.addToCart();
 		
-		Thread.sleep(15000);
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+	    wait.until(ExpectedConditions.titleContains("Shopping Cart"));
 		
-		String productName=driver.findElement(By.xpath("(//a[contains(.,'IGNITE')])[2]")).getText();
+		String productName=driver.findElement(By.xpath("//table[@id='shopping-cart-table']//h2/a")).getText();
 		System.out.println(productName);
 		
+		//Verifying text using assert
 		Assert.assertEquals(productName,"IGNITE EvoKNIT Lo 2 Men's Running Shoes");
 		Reporter.log("text IGNITE EvoKNIT Lo 2 Men's Running Shoes is present",true);
 		
-		String value1 = driver.findElement(By.xpath("//td//select/option[1]")).getText();
+		String value1 = driver.findElement(By.xpath("//td//select/option[@selected='selected']")).getText();
 		System.out.println(value1);
 		Assert.assertEquals(value1, "1");
 		Reporter.log("Quantity one is present",true);
